@@ -25,9 +25,7 @@ RAZAN = "1397042354"
 JASEM = "1450865400"
 
 if Config.UPSTREAM_REPO == "rek":
-    UPSTREAM_REPO_URL = (
-        "https://github.com/33xx/th"
-    )
+    UPSTREAM_REPO_URL = "https://github.com/33xx/th"
 else:
     UPSTREAM_REPO_URL = Config.UPSTREAM_REPO
 
