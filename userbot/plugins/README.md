@@ -16,8 +16,8 @@ from ..core.managers import edit_delete, edit_or_reply
 plugin_category="extra"
 
 @jmthon.ar_cmd(
-    pattern="ديـو(?:\s|$)([\s\S]*)",
-    command=("ديـو", plugin_category),
+    pattern="ريـك(?:\s|$)([\s\S]*)",
+    command=("ريـك", plugin_category),
     info={
         "استخدام": "{tr}ريـك",
         "مثال":  "{tr}ريـك هلا",
