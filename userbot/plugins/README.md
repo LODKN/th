@@ -19,8 +19,8 @@ plugin_category="extra"
     pattern="ديـو(?:\s|$)([\s\S]*)",
     command=("ديـو", plugin_category),
     info={
-        "استخدام": "{tr}ديـو",
-        "مثال":  "{tr}ديـو هلا",
+        "استخدام": "{tr}ريـك",
+        "مثال":  "{tr}ريـك هلا",
     },
 )
 async def hi_buddy(event):
@@ -33,4 +33,4 @@ async def hi_buddy(event):
     await edit_or_reply(event,outputtext)
 ```
 
-For more information refer this [Docs](https://t.me/DEOOUS)
+For more information refer this [Docs](https://t.me/k4kk44)
