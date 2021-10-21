@@ -37,7 +37,7 @@ async def start(event):
                     Button.inline("♰ اوامر البوت ♰", data="gibcmd"),
                 ],
                 [
-                    Button.url("♰ قناتنا ♰", "https://t.me/k4kk4d"),
+                    Button.url("♰ قناتنا ♰", "https://t.me/k4kk44"),
                     Button.inline("♰ الزخرفه ♰", data="rozzag"),
                 ],
             ],
