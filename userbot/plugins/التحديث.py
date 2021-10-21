@@ -263,7 +263,7 @@ async def upstream(event):
     if conf == "" and not force_update:
         await print_changelogs(event, ac_br, changelog)
         await event.delete()
-        return await event.respond(f"♰︙  لتحديث سورس ريٓك ارسل : `.تحديث الان` ")
+        return await event.respond(f"♰︙  لتحديث سورس ريـك ارسل : `.تحديث الان` ")
 
     if force_update:
         await event.edit(
