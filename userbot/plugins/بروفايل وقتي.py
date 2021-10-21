@@ -120,7 +120,9 @@ async def _(event):
     await edit_delete(event, "**تم تفـعيل الصـورة الـوقتية بنجـاح ♰**")
     await digitalpicloop()
 
-#حلاوه للزعاطيط يلا علامة وحده
+
+# حلاوه للزعاطيط يلا علامة وحده
+
 
 @jmthon.ar_cmd(
     pattern="اسم وقتي$",

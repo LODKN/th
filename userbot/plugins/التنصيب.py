@@ -7,5 +7,3 @@ async def _(event):
         await event.edit(
             "♰︙**مـرحبا بـك عزيـزي** \n♰︙رابط التنصيب - [اضغط هنا](http://2u.pw/btpnU)\n♰︙قناة السورس - @DEOOUS"
         )
-
-

@@ -30,9 +30,7 @@ async def startgmute(event):
         if not user:
             return
         if user.id == jmthon.uid:
-            return await edit_or_reply(
-                event, "*♰... . لمـاذا تࢪيـد كتم نفسـك؟  ..♰**"
-            )
+            return await edit_or_reply(event, "*♰... . لمـاذا تࢪيـد كتم نفسـك؟  ..♰**")
         userid = user.id
     try:
         user = (await event.client(GetFullUserRequest(userid))).user

@@ -23,7 +23,6 @@ async def _(event):
         await event.edit("".join(deq))
         deq.rotate(1)
 
- 
 
 @jmthon.ar_cmd(
     pattern="مكعبات$",
@@ -59,6 +58,7 @@ async def _(event):
         await asyncio.sleep(0.3)
         await event.edit("".join(deq))
         deq.rotate(1)
+
 
 @jmthon.ar_cmd(
     pattern="جسمه$",

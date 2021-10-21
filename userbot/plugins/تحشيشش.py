@@ -107,10 +107,11 @@ async def permalink(mention):
         return await edit_or_reply(mention, f"[{custom}](tg://user?id={user.id})")
     tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
     await edit_or_reply(
-        mention, f"♰︙المستخدم [{tag}](tg://user?id={user.id}) \n♰︙ تـم رفعـه ليصبح نسيم 🖤 "
+        mention,
+        f"♰︙المستخدم [{tag}](tg://user?id={user.id}) \n♰︙ تـم رفعـه ليصبح نسيم 🖤 ",
     )
 
-    
+
 @jmthon.ar_cmd(
     pattern="رفع صاحب(?:\s|$)([\s\S]*)",
     command=("رفع صاحب", plugin_category),
@@ -124,10 +125,11 @@ async def permalink(mention):
         return await edit_or_reply(mention, f"[{custom}](tg://user?id={user.id})")
     tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
     await edit_or_reply(
-        mention, f"♰︙المستخدم [{tag}](tg://user?id={user.id}) \n♰︙تـم رفعـه ليصبح صاحـب الحديقه 😂😂 "
+        mention,
+        f"♰︙المستخدم [{tag}](tg://user?id={user.id}) \n♰︙تـم رفعـه ليصبح صاحـب الحديقه 😂😂 ",
     )
 
-    
+
 @jmthon.ar_cmd(
     pattern="رفع ريكو(?:\s|$)([\s\S]*)",
     command=("رفع ريكو", plugin_category),
@@ -141,10 +143,11 @@ async def permalink(mention):
         return await edit_or_reply(mention, f"[{custom}](tg://user?id={user.id})")
     tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
     await edit_or_reply(
-        mention, f"♰︙المستخدم [{tag}](tg://user?id={user.id}) \n♰︙تـم رفعـه ليصبح ريكو المطور ."
+        mention,
+        f"♰︙المستخدم [{tag}](tg://user?id={user.id}) \n♰︙تـم رفعـه ليصبح ريكو المطور .",
     )
-    
-    
+
+
 @jmthon.ar_cmd(
     pattern="رفع مطي(?:\s|$)([\s\S]*)",
     command=("رفع مطي", plugin_category),

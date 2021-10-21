@@ -7,7 +7,6 @@ from pathlib import Path
 
 import requests
 from telethon import Button, functions, types, utils
-from telethon.tl.functions.channels import JoinChannelRequest
 
 from userbot import BOTLOG, BOTLOG_CHATID, PM_LOGGER_GROUP_ID
 
@@ -82,10 +81,7 @@ async def startupmessage():
         if msg_details:
             await jmthon.check_testcases()
             message = await jmthon.get_messages(msg_details[0], ids=msg_details[1])
-            text = (
-                message.text
-                + "\n\n**♰︙هلا ضلعي تم تشغيل بوت ديـو بنجاح**"
-            )
+            text = message.text + "\n\n**♰︙هلا ضلعي تم تشغيل بوت ديـو بنجاح**"
             await jmthon.edit_message(msg_details[0], msg_details[1], text)
             if gvarstatus("restartupdate") is not None:
                 await jmthon.send_message(
@@ -178,6 +174,7 @@ async def load_plugins(folder):
                 LOGS.info(
                     f"♰︙غير قادر على التحميل {shortname} يوجد هناك خطا بسبب : {e}"
                 )
+
 
 async def verifyLoggerGroup():
     """

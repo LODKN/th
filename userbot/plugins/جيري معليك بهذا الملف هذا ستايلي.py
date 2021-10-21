@@ -37,12 +37,10 @@ async def _(event):
         return
     reply_to_id = await reply_id(event)
     start = datetime.now()
-    cat = await edit_or_reply(
-        event, "<b><i>𝗡𝗘𝗪 𝗦𝗧𝗬𝗟𝗘 🔥</b></i>", "html"
-    )
+    cat = await edit_or_reply(event, "<b><i>𝗡𝗘𝗪 𝗦𝗧𝗬𝗟𝗘 🔥</b></i>", "html")
     end = datetime.now()
     await cat.delete()
-    ms = (end - start).microseconds / 1000
+    (end - start).microseconds / 1000
     if PING_PIC:
         caption = f"<b><i>{JM_TXT}<i><b>𝗡𝗘𝗪 𝗦𝗧𝗬𝗟𝗘 🔥\n<b> {hmention}</b>︎ ︎ ︎"
         await event.client.send_file(
