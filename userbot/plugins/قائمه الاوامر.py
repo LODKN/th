@@ -177,7 +177,8 @@ async def _(event):
         await event.edit(
             "قائمة اوامر تحويل الصيغ و الجهات:\n➖➖➖➖➖➖➖➖➖➖➖➖➖\n ⌯︙اختر احدى هذه القوائم\n\n- ( `.اوامر التحويل` )\n- ( `.اوامر الجهات` ) \n\n➖➖➖➖➖➖➖➖➖➖➖➖➖\n⌔︙CH : @DEOOUS"
         )
-        
+
+
 @jmthon.ar_cmd(
     pattern="م16$",
     command=("م16", plugin_category),
