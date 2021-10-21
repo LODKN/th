@@ -19,7 +19,7 @@ except:
 plugin_category = "tools"
 
 PING_PIC = os.environ.get("PING_PIC") or (
-    "https://telegra.ph/file/d75e7e9310ea3fa8ab49b.mp4"
+    "https://telegra.ph/file/8819dc0795f00beb8c807.jpg"
 )
 
 JM_TXT = (
@@ -33,7 +33,7 @@ JM_TXT = (
     command=("بنك متطور", plugin_category),
     info={
         "header": "امر تجربه البوت اذا يشتغل ارسل  .بنك متطور فقط",
-        "option": "امر بنك المتطور كتابة  @DEOOUS",
+        "option": "امر بنك المتطور كتابة  @nnnuu",
         "usage": [
             "{tr}بنك متطور",
         ],
@@ -49,7 +49,7 @@ async def _(event):
     await cat.delete()
     ms = (end - start).microseconds / 1000
     if PING_PIC:
-        caption = f"<b><i>{JM_TXT}<i><b>\n<code>┏━━━━━━━┓\n┃ ♰ : 𝖉𝖊𝖛 - @DEOOUS\n┃ ♰ : <b>{hmention}</b>\n<b>┃ ♰ : {ms}\n</b>┗━━━━━━━┛"
+        caption = f"<b><i>{JM_TXT}<i><b>\n<code>┏━━━━━━━┓\n┃ ♰ : ძَᥱv @k4kk44 \n┃ ♰ : <b>{hmention}</b>\n<b>┃ ♰ : {ms}\n</b>┗━━━━━━━┛"
         await event.client.send_file(
             event.chat_id,
             PING_PIC,
