@@ -77,7 +77,7 @@ async def autoname_loop():
     while AUTONAMESTART:
         time.strftime("%Y/%m/%d")
         HI = time.strftime("%I:%M")
-        name = f"{RR7PP} {HI} ♰ "
+        name = f"{RR7PP} {HI} "
         LOGS.info(name)
         try:
             await jmthon(functions.account.UpdateProfileRequest(first_name=name))
