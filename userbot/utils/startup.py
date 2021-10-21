@@ -22,7 +22,7 @@ from ..sql_helper.globals import addgvar, delgvar, gvarstatus
 from .pluginmanager import load_module
 from .tools import create_supergroup
 
-LOGS = logging.getLogger("DEOUS")
+LOGS = logging.getLogger("nnnuu")
 cmdhr = Config.COMMAND_HAND_LER
 
 
@@ -63,9 +63,9 @@ async def startupmessage():
         if BOTLOG:
             Config.CATUBLOGO = await jmthon.tgbot.send_file(
                 BOTLOG_CHATID,
-                "https://telegra.ph/file/97b141d329e9b83add399.mp4",
-                caption="♰︙**بــوت ديـو يـعـمـل بـنـجـاح** ♰ \n♰︙**قـنـاة الـسـورس**  :  @DEOOUS",
-                buttons=[(Button.url("♰ مطورين ♰", "https://t.me/REKHSO"),)],
+                "https://telegra.ph/file/8819dc0795f00beb8c807.jpg",
+                caption="♰︙**بــوت ريـك يـعـمـل بـنـجـاح** ♰ \n♰︙**قـنـاة الـسـورس**  :  @k4kk44",
+                buttons=[(Button.url("♰ مطورين ♰", "https://t.me/nnnuu"),)],
             )
     except Exception as e:
         LOGS.error(e)
@@ -81,7 +81,7 @@ async def startupmessage():
         if msg_details:
             await jmthon.check_testcases()
             message = await jmthon.get_messages(msg_details[0], ids=msg_details[1])
-            text = message.text + "\n\n**♰︙هلا ضلعي تم تشغيل بوت ديـو بنجاح**"
+            text = message.text + "\n\n**♰︙هلا ضلعي تم تشغيل بوت ريـك بنجاح**"
             await jmthon.edit_message(msg_details[0], msg_details[1], text)
             if gvarstatus("restartupdate") is not None:
                 await jmthon.send_message(
@@ -233,7 +233,7 @@ async def verifyLoggerGroup():
                 "♰︙حدث استثناء عند محاولة التحقق من PM_LOGGER_GROUP_ID.\n" + str(e)
             )
     else:
-        descript = "♰︙ وظيفه الكروب يحفظ رسائل الخاص اذا ما تريد الامر احذف الكروب نهائي \n  - @DEOOUS"
+        descript = "♰︙ وظيفه الكروب يحفظ رسائل الخاص اذا ما تريد الامر احذف الكروب نهائي \n  - @k4kk44"
         _, groupid = await create_supergroup(
             "كـروب تخزين الخاص ♰", jmthon, Config.TG_BOT_USERNAME, descript
         )
