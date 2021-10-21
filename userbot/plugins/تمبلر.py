@@ -8,8 +8,8 @@ plugin_category = "extra"
 
 # by ~ @RR9R7
 @jmthon.ar_cmd(
-    pattern="م17$",
-    command=("م17", plugin_category),
+    pattern="م16$",
+    command=("م16", plugin_category),
 )
 async def _(event):
     if not event.text[0].isalpha() and event.text[0] not in ("/", "#", "@", "!"):
@@ -26,7 +26,7 @@ async def _(event):
 async def _(event):
     if not event.text[0].isalpha() and event.text[0] not in ("/", "#", "@", "!"):
         await event.edit(
-            "˛ 𝗠𝗔𝗧𝗥𝗜𝗫 𝗕𝗢𝗧\n"
+            "˛ ᖇᥱ𝗄 َِB᥆ƚ\n"
             "•━═━═━═━═━━═━═━═━═━•\n"
             "**قائـمة اوامر الزغرفة :**\n"
             " `.زغرفة0`\n"
@@ -41,7 +41,7 @@ async def _(event):
             " `.زغرفة9`\n"
             " **اكتب الاسم مع الامر للـزغرفة فقط انكليزي**\n"
             "•━═━═━═━═━━═━═━═━═━•‌‌\n"
-            "˛ 𝗠𝗔𝗧𝗥𝗜𝗫 𝗕𝗢𝗧 - [CَِٓHُ](t.me/FFIIX)"
+            "˛ ᖇᥱ𝗄 َِB᥆ƚ  - [CَِٓHُ](t.me/NNNUU)"
         )
 
 
