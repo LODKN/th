@@ -257,7 +257,7 @@ async def upstream(event):
     # Special case for deploy
     if changelog == "" and not force_update:
         await event.edit(
-            "**♰︙سورس ريـك محدث الى اخر اصدار **\n" f"**قـنـاة سـورس ريـك** : @k4kk4d"
+            "**♰︙سورس ريـك محدث الى اخر اصدار **\n" f"**قـنـاة سـورس ريـك** : @k4kk44"
         )
         return repo.__del__()
     if conf == "" and not force_update:
