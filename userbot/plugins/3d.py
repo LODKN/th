@@ -1,7 +1,7 @@
 import pyfiglet
 
 from ..helpers.utils import _format
-from . import _format, iqthon, deEmojify, edit_delete, edit_or_reply
+from . import _format, deEmojify, edit_delete, edit_or_reply, iqthon
 
 plugin_category = "extra"
 
@@ -67,9 +67,7 @@ async def figlet(event):
         try:
             font = CMD_FIG[style.strip()]
         except KeyError:
-            return await edit_delete(
-                event, "**♰︙تم تحديـد نمـط غيـر صالـح ⚠️**"
-            )
+            return await edit_delete(event, "**♰︙تم تحديـد نمـط غيـر صالـح ⚠️**")
         result = pyfiglet.figlet_format(deEmojify(text), font=font)
     else:
         result = pyfiglet.figlet_format(deEmojify(text))
