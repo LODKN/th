@@ -36,7 +36,7 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
             else:
                 result = builder.article(
                     title="nnnuu - USERBOT",
-                    text=ROZ,
+                    text="عير ب امك",
                     buttons=buttons,
                     link_preview=False,
                 )
