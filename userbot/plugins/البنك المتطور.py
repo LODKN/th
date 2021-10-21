@@ -22,7 +22,10 @@ PING_PIC = os.environ.get("PING_PIC") or (
     "https://telegra.ph/file/d75e7e9310ea3fa8ab49b.mp4"
 )
 
-JM_TXT = os.environ.get("PING_TEXT") or "الخسارة بعد المقاومة تختلف عن الخسارة بدونها.. إنها نصر من نوع آخر لا يعرف معناه إلا من جربه. 🔥"
+JM_TXT = (
+    os.environ.get("PING_TEXT")
+    or "الخسارة بعد المقاومة تختلف عن الخسارة بدونها.. إنها نصر من نوع آخر لا يعرف معناه إلا من جربه. 🔥"
+)
 
 
 @jmthon.ar_cmd(
@@ -41,9 +44,7 @@ async def _(event):
         return
     reply_to_id = await reply_id(event)
     start = datetime.now()
-    cat = await edit_or_reply(
-        event, "<b><i>  ..♰ البــــنك ♰..  </b></i>", "html"
-    )
+    cat = await edit_or_reply(event, "<b><i>  ..♰ البــــنك ♰..  </b></i>", "html")
     end = datetime.now()
     await cat.delete()
     ms = (end - start).microseconds / 1000
