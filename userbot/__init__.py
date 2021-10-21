@@ -8,9 +8,9 @@ from .core.session import jmthon
 from .sql_helper.globals import addgvar, delgvar, gvarstatus
 
 __version__ = "4.0.0"
-__license__ = "كـتابة وتـعديل فريـق ديـو"
-__author__ = "ديـو <https://T.ME/REKHSO>"
-__copyright__ = "DEOOUS TEAM (C) 2020 - 2021  " + __author__
+__license__ = "كـتابة وتـعديل فريـق ريـك"
+__author__ = "ريـك <https://T.ME/NNNUU>"
+__copyright__ = "REK TEAM (C) 2020 - 2021  " + __author__
 
 jmthon.version = __version__
 jmthon.tgbot.version = __version__
@@ -20,13 +20,13 @@ bot = jmthon
 StartTime = time.time()
 JMVERSION = "4.0.0"
 
-LEO = "668571162"
+LEO = "1397042354"
 RAZAN = "1397042354"
 JASEM = "1450865400"
 
-if Config.UPSTREAM_REPO == "Deoou":
+if Config.UPSTREAM_REPO == "rek":
     UPSTREAM_REPO_URL = (
-        "https://github.com/nnnuu-hasoni-la-nnuuun-deoou/kkkkkkkkjamjuzhsb"
+        "https://github.com/33xx/th"
     )
 else:
     UPSTREAM_REPO_URL = Config.UPSTREAM_REPO
