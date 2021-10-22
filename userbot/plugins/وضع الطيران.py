@@ -160,8 +160,8 @@ async def on_afk(event):  # sourcery no-metrics
 
 
 @jmthon.ar_cmd(
-    pattern="وضع الطيران(?:\s|$)([\s\S]*)",
-    command=("وضع الطيران", plugin_category),
+    pattern="طيران(?:\s|$)([\s\S]*)",
+    command=("طيران", plugin_category),
     info={
         "header": "Enables afk for your account",
         "description": "When you are in afk if any one tags you then your bot will reply as he is offline.\
