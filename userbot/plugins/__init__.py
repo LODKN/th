@@ -4,7 +4,6 @@ import re
 import time
 
 import heroku3
-import iqthon
 import lottie
 import requests
 import spamwatch as spam_watch
