@@ -30,8 +30,8 @@ from . import (
     BOTLOG_CHATID,
     DEFAULT_BIO,
     _catutils,
-    iqthon,
     edit_delete,
+    iqthon,
     logging,
 )
 
@@ -217,7 +217,7 @@ async def bloom_pfploop():
 async def autoname_loop():
     AUTONAMESTART = gvarstatus("اسم وقتي") == "true"
     while AUTONAMESTART:
-        DM = time.strftime("%Y/%m/%d")
+        time.strftime("%Y/%m/%d")
         HM = time.strftime("%I:%M")
         name = f"{EMOJI_TELETHON} {HM} - "
         LOGS.info(name)
@@ -233,7 +233,7 @@ async def autoname_loop():
 async def autobio_loop():
     AUTOBIOSTART = gvarstatus("نبذه وقتيه") == "true"
     while AUTOBIOSTART:
-        DMY = time.strftime("%Y/%m/%d")
+        time.strftime("%Y/%m/%d")
         HM = time.strftime("%I:%M")
         bio = f"{EMOJI_TELETHON} {DEFAULTUSERBIO}  - {HM}"
         LOGS.info(bio)
@@ -415,10 +415,15 @@ async def _(event):
     downloader.start(blocking=False)
     while not downloader.isFinished():
         pass
-    if gvarstatus("تجديد الصوره الملونه") is not None and gvarstatus("تجديد الصوره الملونه") == "true":
+    if (
+        gvarstatus("تجديد الصوره الملونه") is not None
+        and gvarstatus("تجديد الصوره الملونه") == "true"
+    ):
         return await edit_delete(event, f"**♰︙تجديد الصوره الملونه مفعّلـة بالفعـل !**")
     addgvar("تجديد الصوره الملونه", True)
-    await edit_delete(event, f"**♰︙تـمّ بـدأ تجديد الصوره الملونه بواسطـة المستخـدم ✓**")
+    await edit_delete(
+        event, f"**♰︙تـمّ بـدأ تجديد الصوره الملونه بواسطـة المستخـدم ✓**"
+    )
     await bloom_pfploop()
 
 
@@ -540,7 +545,9 @@ async def _(event):
 async def _(event):
     "⌔︙يحـدّث البايـو مع الوقـت 💡"
     if gvarstatus("نبذه وقتيه") is not None and gvarstatus("نبذه وقتيه") == "true":
-        return await edit_delete(event, f"**♰︙البايـو الوقتـي قيـد التشغيـل بالفعـل !**")
+        return await edit_delete(
+            event, f"**♰︙البايـو الوقتـي قيـد التشغيـل بالفعـل !**"
+        )
     addgvar("نبذه وقتيه", True)
     await edit_delete(event, "**♰︙تـمّ بـدأ البايـو الوقتـي بواسطـة المستخـدم ✓**")
     await autobio_loop()
@@ -604,7 +611,10 @@ async def _(event):  # sourcery no-metrics
             return await edit_delete(event, "**♰︙تم إيقـاف الصـورة التلقائيـة الآن ✓**")
         return await edit_delete(event, "**♰︙لم يتـم تفعيـل الصـورة التلقائيـة ✕**")
     if input_str == "تجديد الصوره":
-        if gvarstatus("تجديد الصوره") is not None and gvarstatus("تجديد الصوره") == "true":
+        if (
+            gvarstatus("تجديد الصوره") is not None
+            and gvarstatus("تجديد الصوره") == "true"
+        ):
             delgvar("تجديد الصوره")
             await event.client(
                 functions.photos.DeletePhotosRequest(
@@ -614,7 +624,10 @@ async def _(event):  # sourcery no-metrics
             return await edit_delete(event, "**♰︙تم إيقـاف  تجديد الصوره الآن ✓**")
         return await edit_delete(event, "**♰︙لم يتـم تفعيـل تجديد الصوره ✕**")
     if input_str == "تجديد الصوره الملونه":
-        if gvarstatus("تجديد الصوره الملونه") is not None and gvarstatus("تجديد الصوره الملونه") == "true":
+        if (
+            gvarstatus("تجديد الصوره الملونه") is not None
+            and gvarstatus("تجديد الصوره الملونه") == "true"
+        ):
             delgvar("تجديد الصوره الملونه")
             if os.path.exists(autopic_path):
                 file = await event.client.upload_file(autopic_path)
