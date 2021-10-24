@@ -1,3 +1,4 @@
+
 import sys
 
 import userbot
@@ -8,6 +9,8 @@ from .core.logger import logging
 from .core.session import jmthon
 from .utils import (
     add_bot_to_logger_group,
+    autojo,
+    autozs,
     ipchange,
     load_plugins,
     setup_bot,
@@ -15,7 +18,7 @@ from .utils import (
     verifyLoggerGroup,
 )
 
-LOGS = logging.getLogger("k4kk44")
+LOGS = logging.getLogger("NNNUU")
 
 print(userbot.__copyright__)
 print("Licensed under the terms of the " + userbot.__license__)
@@ -64,6 +67,9 @@ async def startup_process():
 
 
 jmthon.loop.run_until_complete(startup_process())
+jmthon.loop.run_until_complete(autozs())
+jmthon.loop.run_until_complete(autojo())
+
 
 if len(sys.argv) not in (1, 3, 4):
     jmthon.disconnect()
