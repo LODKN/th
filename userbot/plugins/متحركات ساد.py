@@ -30,8 +30,8 @@ async def tmgif(event):
 
 
 @jmthon.ar_cmd(
-    pattern="س2$",
-    command=("س2", plugin_category),
+    pattern=".$",
+    command=(".", plugin_category),
 )
 async def tmgif(event):
     if event.fwd_from:
@@ -39,9 +39,28 @@ async def tmgif(event):
     leo = await reply_id(event)
     if sad2:
         RAZAN = f"**ᖇَᥱ𝗄**\n"
-        RAZAN += f"✛━━━━━━━━━━━━━✛\n"
-        RAZAN += f"**الـمتحـرڪـة الـثـانيـة **"
         await event.client.send_file(event.chat_id, sad2, caption=RAZAN, reply_to=leo)
+
+
+# edit  ~ @RR9R7 for Jmthon
+# جميع الحقوق محفوظة لسـورس ماتركـس تخـمط تبيـن فشلـك
+
+
+@jmthon.ar_cmd(
+    pattern="س2$",
+    command=("س2", plugin_category),
+)
+async def tmgif(event):
+    if event.fwd_from:
+        return
+    sic_id = await reply_id(event)
+    if sad3:
+        RAZAN = f"**ᖇَᥱ𝗄**\n"
+        RAZAN += f"✛━━━━━━━━━━━━━✛\n"
+        RAZAN += f"**الـمتحـرڪـة الـثـانيـة**\n"
+        await event.client.send_file(
+            event.chat_id, sad3, caption=RAZAN, reply_to=sic_id
+        )
 
 
 # edit  ~ @RR9R7 for Jmthon
@@ -55,13 +74,13 @@ async def tmgif(event):
 async def tmgif(event):
     if event.fwd_from:
         return
-    sic_id = await reply_id(event)
-    if sad3:
+    reply_to_id = await reply_id(event)
+    if sad4:
         RAZAN = f"**ᖇَᥱ𝗄**\n"
         RAZAN += f"✛━━━━━━━━━━━━━✛\n"
-        RAZAN += f"**الـمتحـرڪـة الـثـالثـة**\n"
+        RAZAN += f"**الـمتحـرڪـة الـثالثـة**\n"
         await event.client.send_file(
-            event.chat_id, sad3, caption=RAZAN, reply_to=sic_id
+            event.chat_id, sad4, caption=RAZAN, reply_to=reply_to_id
         )
 
 
@@ -77,12 +96,12 @@ async def tmgif(event):
     if event.fwd_from:
         return
     reply_to_id = await reply_id(event)
-    if sad4:
+    if sad5:
         RAZAN = f"**ᖇَᥱ𝗄**\n"
         RAZAN += f"✛━━━━━━━━━━━━━✛\n"
-        RAZAN += f"**الـمتحـرڪـة الـرابـعـة**\n"
+        RAZAN += f"**الـمتحـرڪـة الـرابعـة**\n"
         await event.client.send_file(
-            event.chat_id, sad4, caption=RAZAN, reply_to=reply_to_id
+            event.chat_id, sad5, caption=RAZAN, reply_to=reply_to_id
         )
 
 
@@ -98,12 +117,12 @@ async def tmgif(event):
     if event.fwd_from:
         return
     reply_to_id = await reply_id(event)
-    if sad5:
+    if sad6:
         RAZAN = f"**ᖇَᥱ𝗄**\n"
         RAZAN += f"✛━━━━━━━━━━━━━✛\n"
-        RAZAN += f"**الـمتحـرڪـة الـخامسـة**\n"
+        RAZAN += f"**الـمتحـرڪـة الـخامسة**\n"
         await event.client.send_file(
-            event.chat_id, sad5, caption=RAZAN, reply_to=reply_to_id
+            event.chat_id, sad6, caption=RAZAN, reply_to=reply_to_id
         )
 
 
@@ -119,17 +138,13 @@ async def tmgif(event):
     if event.fwd_from:
         return
     reply_to_id = await reply_id(event)
-    if sad6:
+    if sad7:
         RAZAN = f"**ᖇَᥱ𝗄**\n"
         RAZAN += f"✛━━━━━━━━━━━━━✛\n"
         RAZAN += f"**الـمتحـرڪـة الـسادسـة**\n"
         await event.client.send_file(
-            event.chat_id, sad6, caption=RAZAN, reply_to=reply_to_id
+            event.chat_id, sad7, caption=RAZAN, reply_to=reply_to_id
         )
-
-
-# edit  ~ @RR9R7 for Jmthon
-# جميع الحقوق محفوظة لسـورس ماتركـس تخـمط تبيـن فشلـك
 
 
 @jmthon.ar_cmd(
@@ -140,12 +155,12 @@ async def tmgif(event):
     if event.fwd_from:
         return
     reply_to_id = await reply_id(event)
-    if sad7:
+    if sad8:
         RAZAN = f"**ᖇَᥱ𝗄**\n"
         RAZAN += f"✛━━━━━━━━━━━━━✛\n"
-        RAZAN += f"**الـمتحـرڪـة الـسـابعـة**\n"
+        RAZAN += f"**الـمتحـرڪـة السابعـة**\n"
         await event.client.send_file(
-            event.chat_id, sad7, caption=RAZAN, reply_to=reply_to_id
+            event.chat_id, sad8, caption=RAZAN, reply_to=reply_to_id
         )
 
 
@@ -157,27 +172,10 @@ async def tmgif(event):
     if event.fwd_from:
         return
     reply_to_id = await reply_id(event)
-    if sad8:
-        RAZAN = f"**ᖇَᥱ𝗄**\n"
-        RAZAN += f"✛━━━━━━━━━━━━━✛\n"
-        RAZAN += f"**الـمتحـرڪـة الثـامنـة**\n"
-        await event.client.send_file(
-            event.chat_id, sad8, caption=RAZAN, reply_to=reply_to_id
-        )
-
-
-@jmthon.ar_cmd(
-    pattern="س9$",
-    command=("س9", plugin_category),
-)
-async def tmgif(event):
-    if event.fwd_from:
-        return
-    reply_to_id = await reply_id(event)
     if sad9:
         RAZAN = f"**ᖇَᥱ𝗄**\n"
         RAZAN += f"✛━━━━━━━━━━━━━✛\n"
-        RAZAN += f"**الـمتحـرڪـة التـاسعـة**\n"
+        RAZAN += f"**الـمتحـرڪـة الثـامنـة**\n"
         await event.client.send_file(
             event.chat_id, sad9, caption=RAZAN, reply_to=reply_to_id
         )
