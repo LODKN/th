@@ -17,7 +17,7 @@ plugin_category = "extra"
 async def tmgif(event):
     if event.fwd_from:
         return
-    RR9R7 = await reply_id(event)
+    RR9R7 = "ᖇَᥱ𝗄"
     if sad:
         jmthon = f"**{RR9R7}**\n"
         jmthon += f"✛━━━━━━━━━━━━━✛\n"
