@@ -2,7 +2,7 @@
 
 RR9R7 = "ᖇَᥱ𝗄"  # ساد
 sad = "https://telegra.ph/file/4a59106d0ade82859136b.mp4"
-sad2 = "https://telegra.ph/file/6e6f59bac38be6b983f56.mp4"
+sad2 = "https://telegra.ph/file/5fb8cbd5fd6493bfc4950.mp4"
 sad3 = "https://telegra.ph/file/fa1d3bf72e1f7a1e08474.mp4"
 sad4 = "https://telegra.ph/file/890a01ea6cb065a7faa42.mp4"
 sad5 = "https://telegra.ph/file/66778d145442699ce6038.mp4"
@@ -23,6 +23,5 @@ cute6 = "https://telegra.ph/file/f67f3c36091543134bfe3.mp4"
 cute7 = "https://telegra.ph/file/490a014e0e4974bfe94d5.mp4"
 cute8 = "https://telegra.ph/file/ed1d5b4fa2e86e6d7f96f.mp4"
 cute9 = "https://telegra.ph/file/a66b32e8f831ed74ca950.mp4"
-cute10 = "https://telegra.ph/file/5fb8cbd5fd6493bfc4950.mp4"
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━#
