@@ -229,7 +229,7 @@ async def inline_handler(event):
             buttons = [
                 (
                     Button.inline("Stats", data="stats"),
-                    Button.url("DEV", "https://t.me/VV399"),
+                    Button.url("DEV", "https://t.me/k4kk44"),
                 )
             ]
             ALIVE_PIC = gvarstatus("ALIVE_PIC")
@@ -558,7 +558,7 @@ async def inline_handler(event):
     else:
         buttons = [
             (
-                Button.url("♰ قنـاتنا ♰", "t.me/k4kk4d"),
+                Button.url("♰ قنـاتنا ♰", "t.me/k4kk44"),
                 Button.url(
                     "♰ المـطور ♰",
                     "t.me/nnnuu",
