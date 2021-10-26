@@ -570,12 +570,12 @@ async def inline_handler(event):
             url=CATLOGO, size=0, mime_type="image/jpeg", attributes=[]
         )
         text, msg_entities = await event.client._parse_message_text(
-            "♰ بـوت ريـك يعمـل بنجـاح ♰", "md"
+            "**♰ بـوت ريـك يعمـل بنجـاح ♰**", "md"
         )
         result = types.InputBotInlineResult(
             id=str(uuid4()),
             type="photo",
-            title="(♰ اضغـط وبـسولله ♰)",
+            title="♰ اضغـط وبـسولله ♰",
             description="♰ المطـور ♰",
             url="t.me/nnnuu",
             thumb=photo,
