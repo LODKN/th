@@ -422,7 +422,7 @@ async def inline_handler(event):
             _result = main_menu()
             result = builder.article(
                 title="VV399 Help™",
-                description="**▾∮ قائمة التعليمات الخاصة بــ ماتـريكس **",
+                description="**▾∮ قائمة التعليمات الخاصة بــ ريـك **",
                 text=_result[0],
                 buttons=_result[1],
                 link_preview=False,
@@ -558,10 +558,10 @@ async def inline_handler(event):
     else:
         buttons = [
             (
-                Button.url("قناة السورس", "t.me/VV399"),
+                Button.url("♰ قنـاتنا ♰", "t.me/k4kk4d"),
                 Button.url(
-                    "المطور",
-                    "t.me/FFIIX",
+                    "♰ المـطور ♰",
+                    "t.me/nnnuu",
                 ),
             )
         ]
@@ -570,14 +570,14 @@ async def inline_handler(event):
             url=CATLOGO, size=0, mime_type="image/jpeg", attributes=[]
         )
         text, msg_entities = await event.client._parse_message_text(
-            "لجعل ماتريكس من نصيبك!", "md"
+            "♰ بـوت ريـك يعمـل بنجـاح ♰", "md"
         )
         result = types.InputBotInlineResult(
             id=str(uuid4()),
             type="photo",
-            title="(https://t.me/VV399)",
-            description="لـتنصيبه لك",
-            url="t.me/VV399",
+            title="(♰ اضغـط وبـسولله ♰)",
+            description="♰ المطـور ♰",
+            url="t.me/nnnuu",
             thumb=photo,
             content=photo,
             send_message=types.InputBotInlineMessageMediaAuto(
