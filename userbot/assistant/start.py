@@ -84,7 +84,7 @@ async def users(event):
         for starked in total_users:
             users_list += ("==> {} \n").format(int(starked.chat_id))
         with io.BytesIO(str.encode(users_list)) as tedt_file:
-            tedt_file.name = "razan.txt"
+            tedt_file.name = "reko.txt"
             await tgbot.send_file(
                 event.chat_id,
                 tedt_file,
