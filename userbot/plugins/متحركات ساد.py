@@ -30,23 +30,6 @@ async def tmgif(event):
 
 
 @jmthon.ar_cmd(
-    pattern=".$",
-    command=(".", plugin_category),
-)
-async def tmgif(event):
-    if event.fwd_from:
-        return
-    leo = await reply_id(event)
-    if sad2:
-        RAZAN = f"**ᖇَᥱ𝗄**\n"
-        await event.client.send_file(event.chat_id, sad2, caption=RAZAN, reply_to=leo)
-
-
-# edit  ~ @RR9R7 for Jmthon
-# جميع الحقوق محفوظة لسـورس ماتركـس تخـمط تبيـن فشلـك
-
-
-@jmthon.ar_cmd(
     pattern="س2$",
     command=("س2", plugin_category),
 )
