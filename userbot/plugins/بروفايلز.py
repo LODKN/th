@@ -27,17 +27,17 @@ autopic_path = os.path.join(os.getcwd(), "userbot", "original_pic.png")
 digitalpic_path = os.path.join(os.getcwd(), "userbot", "digital_pic.png")
 autophoto_path = os.path.join(os.getcwd(), "userbot", "photo_pfp.png")
 
-digitalpfp = Config.DIGITAL_PIC or "https://telegra.ph/file/3acfb2c07f8331fde4122.jpg"
+digitalpfp = Config.DIGITAL_PIC or "https://telegra.ph/file/3efc6f3494afa987cefcf.jpg"
 RR7PP = Config.TIME_JM or "♰"
 
 normzltext = "1234567890"
 namerzfont = [
     "𝟏",  # كود ريـك حصريا  !!
     "𝟐",
-    "𝟑",  # ههههههههههههههههههههههههههههههههههههههههههههههههه
-    "𝟒",  # اخمط وسمي نفسك مطور
-    "𝟓",  # غير مبري الذمه لكل شخص يخمط
-    "𝟔",  # ها خماط دي
+    "𝟑",  
+    "𝟒", 
+    "𝟓",  
+    "𝟔",  
     "𝟕",
     "𝟖",
     "𝟗",
