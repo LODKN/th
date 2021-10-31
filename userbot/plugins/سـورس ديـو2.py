@@ -39,7 +39,7 @@ async def amireallyalive(event):
     EMOJI = gvarstatus("ALIVE_EMOJI") or "  - "
     ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "** بـوت ريـك يعـمل بنـجـاح **"
     RR7_IMG = (
-        gvarstatus("ALIVE_PIC") or "https://telegra.ph/file/e2cf3928cf0aa3acd1fd9.mp4"
+        gvarstatus("ALIVE_PIC") or "https://telegra.ph/file/31918f84ce9a3fdb84ec9.jpg"
     )
     jmthon_caption = gvarstatus("ALIVE_TEMPLATE") or temp
     caption = jmthon_caption.format(
