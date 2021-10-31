@@ -63,7 +63,7 @@ async def startupmessage():
         if BOTLOG:
             Config.CATUBLOGO = await jmthon.tgbot.send_file(
                 BOTLOG_CHATID,
-                "https://telegra.ph/file/8819dc0795f00beb8c807.jpg",
+                "https://telegra.ph/file/31918f84ce9a3fdb84ec9.jpg",
                 caption="♰︙**بــوت ريـك يـعـمـل بـنـجـاح** ♰ \n♰︙**قـنـاة الـسـورس**  :  @k4kk44",
                 buttons=[(Button.url("♰ مطورين ♰", "https://t.me/nnnuu"),)],
             )
