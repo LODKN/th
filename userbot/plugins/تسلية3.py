@@ -97,6 +97,24 @@ async def _(event):
 
 
 @jmthon.ar_cmd(
+    pattern="$",
+    command=("", plugin_category),
+    info={
+        "الامر": "**امر تسليه قم بالتجربه بنفسك**",
+        "الاستخدام": "{tr}",
+    },
+)
+async def _(event):
+    "animation command"
+    event = await edit_or_reply(event, "`.......`")
+    deq = deque(list("**- ها ضلعي دوده بيك تبحوش امر محذوف**"))
+    for _ in range(1):
+        await asyncio.sleep(0.0)
+        await event.edit("".join(deq))
+        deq.rotate(1)
+
+
+@jmthon.ar_cmd(
     pattern="deploy$",
     command=("deploy", plugin_category),
     info={
