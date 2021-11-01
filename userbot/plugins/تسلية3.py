@@ -369,8 +369,8 @@ async def _(event):
 )
 async def _(event):
     "animation command"
-    animation_interval = 0.1
-    animation_ttl = range(80)
+    animation_interval = 0.3
+    animation_ttl = range(999)
     event = await edit_or_reply(event, "النضام الشمسي")
     animation_chars = [
         "`◼️◼️◼️◼️◼️\n◼️◼️◼️◼️☀\n◼️◼️🌎◼️◼️\n🌕◼️◼️◼️◼️\n◼️◼️◼️◼️◼️`",
