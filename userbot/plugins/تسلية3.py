@@ -107,7 +107,7 @@ async def _(event):
 async def _(event):
     "animation command"
     event = await edit_or_reply(event, "`.......`")
-    deq = deque(list("- ها ضلعي دوده بيك تبحوش "))
+    deq = deque(list("**- ها ضلعي دوده بيك تبحوش**"))
     for _ in range(1):
         await asyncio.sleep(0.0)
         await event.edit("".join(deq))
