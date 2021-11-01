@@ -226,8 +226,8 @@ async def _(event):
 
 
 @jmthon.ar_cmd(
-    pattern="وضع الطيران_ميديا(?:\s|$)([\s\S]*)",
-    command=("وضع الطيران_ميديا", plugin_category),
+    pattern="طيران ميديا(?:\s|$)([\s\S]*)",
+    command=("طيران ميديا", plugin_category),
     info={
         "header": "Enables afk for your account",
         "description": "When you are in afk if any one tags you then your bot will reply as he is offline.\
