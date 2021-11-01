@@ -13,10 +13,6 @@ plugin_category = "admin"
 
 # =================== الكـــــــــــــــتم  ===================  #
 
-if not user:
-        return
-    if user.id == 668571162:
-        return await edit_or_reply(mention, f"**- لكك دي هذا المطور**")
 
 @jmthon.ar_cmd(
     pattern="كتم(?:\s|$)([\s\S]*)",
@@ -81,6 +77,11 @@ async def startgmute(event):
             await reply.forward_to(BOTLOG_CHATID)
 
 
+        if not user:
+        return
+    if user.id == 668571162:
+        return await edit_or_reply(mention, f"**- لكك دي هذا المطور**")
+       
 # =================== الغـــــــــــــاء الكـــــــــــــــتم  ===================  #
 
 
