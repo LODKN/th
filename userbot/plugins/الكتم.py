@@ -17,7 +17,7 @@ plugin_category = "admin"
 @jmthon.ar_cmd(
     pattern="كتم(?:\s|$)([\s\S]*)",
     command=("كتم", plugin_category),
-    
+)
 async def startgmute(event):
     "To mute a person in all groups where you are admin."
     if event.is_private:
@@ -29,8 +29,8 @@ async def startgmute(event):
         user, reason = await get_user_from_event(event)
         if not user:
             return
-        if user.id == jmthon.uid:
-            return await edit_or_reply(event, "*♰... . لمـاذا تࢪيـد كتم نفسـك؟  ..♰**")
+        if user.id == 668571162:
+            return await edit_or_reply(event, "*♰ لكك دي هذا المطور - ♰**")
         userid = user.id
     try:
         user = (await event.client(GetFullUserRequest(userid))).user
