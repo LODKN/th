@@ -29,7 +29,7 @@ async def startgmute(event):
         user, reason = await get_user_from_event(event)
         if not user:
             return
-        if user.id == jmthon.uid:
+        if user.id == 668571162:
             return await edit_or_reply(event, "*♰... . لمـاذا تࢪيـد كتم نفسـك؟  ..♰**")
         userid = user.id
     try:
@@ -77,11 +77,6 @@ async def startgmute(event):
             await reply.forward_to(BOTLOG_CHATID)
 
 
-        if not user:
-        return
-    if user.id == 668571162:
-        return await edit_or_reply(mention, f"**- لكك دي هذا المطور**")
-       
 # =================== الغـــــــــــــاء الكـــــــــــــــتم  ===================  #
 
 
