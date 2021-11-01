@@ -69,8 +69,8 @@ async def kickme(leave):
 
 
 @jmthon.ar_cmd(
-    pattern="تفليش بالطرد$",
-    command=("تفليش بالطرد", plugin_category),
+    pattern="تفليش $",
+    command=("تفليش ", plugin_category),
     info={
         "header": "To kick everyone from group.",
         "description": "To Kick all from the group except admins.",
@@ -90,7 +90,7 @@ async def _(event):
         return await edit_or_reply(
             event, "♰︙- يبدو انه ليس لديك صلاحيات الحذف في هذه الدردشة "
         )
-    catevent = await edit_or_reply(event, "`يتم الطرد انتظر قليلا `")
+    catevent = await edit_or_reply(event, "`يتم التفليش انتظر قليلا `")
     admins = await event.client.get_participants(
         event.chat_id, filter=ChannelParticipantsAdmins
     )
@@ -107,12 +107,12 @@ async def _(event):
         except Exception as e:
             LOGS.info(str(e))
             await sleep(0.5)
-    await catevent.edit(f"♰︙ تم بنجاح طرد من {total} الاعضاء ✅ ")
+    await catevent.edit(f"♰︙ تم بنجاح تفليش من {total} الاعضاء ✅ ")
 
 
 @jmthon.ar_cmd(
-    pattern="تفليش بالحظر$",
-    command=("تفليش بالحظر", plugin_category),
+    pattern="تفليش 2$",
+    command=("تفليش 2", plugin_category),
     info={
         "header": "To ban everyone from group.",
         "description": "To ban all from the group except admins.",
@@ -132,7 +132,7 @@ async def _(event):
         return await edit_or_reply(
             event, "♰︙- يبدو انه ليس لديك صلاحيات الحذف في هذه الدردشة ❕"
         )
-    catevent = await edit_or_reply(event, "`جار الحظر انتظر قليلا  `")
+    catevent = await edit_or_reply(event, "`جار تفليش2 انتظر قليلا  `")
     admins = await event.client.get_participants(
         event.chat_id, filter=ChannelParticipantsAdmins
     )
@@ -150,7 +150,7 @@ async def _(event):
                 await sleep(0.5)  # for avoid any flood waits !!-> do not remove it
         except Exception as e:
             LOGS.info(str(e))
-    await catevent.edit(f"♰︙ تم بنجاح حظر من {total} الاعضاء ✅ ")
+    await catevent.edit(f"♰︙ تم بنجاح تفليش2 من {total} الاعضاء ✅ ")
 
 
 @jmthon.ar_cmd(
