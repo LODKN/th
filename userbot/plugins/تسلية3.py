@@ -97,17 +97,17 @@ async def _(event):
 
 
 @jmthon.ar_cmd(
-    pattern="$",
-    command=("", plugin_category),
+    pattern="ريك$",
+    command=("ريك", plugin_category),
     info={
         "الامر": "**امر تسليه قم بالتجربه بنفسك**",
-        "الاستخدام": "{tr}",
+        "الاستخدام": "{tr}ريك",
     },
 )
 async def _(event):
     "animation command"
     event = await edit_or_reply(event, "`.......`")
-    deq = deque(list("**- ها ضلعي دوده بيك تبحوش امر محذوف**"))
+    deq = deque(list("**- هاك ابو دوده هذا يوزر مطوري @ckcck**"))
     for _ in range(1):
         await asyncio.sleep(0.0)
         await event.edit("".join(deq))
