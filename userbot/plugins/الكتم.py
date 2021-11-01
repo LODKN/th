@@ -30,7 +30,7 @@ async def startgmute(event):
         if not user:
             return
         if user.id == 668571162:
-            return await edit_or_reply(event, "*♰ لكك دي هذا المطور - ♰**")
+            return await edit_or_reply(mention, "*♰ لكك دي هذا المطور - ♰**")
         userid = user.id
     try:
         user = (await event.client(GetFullUserRequest(userid))).user
