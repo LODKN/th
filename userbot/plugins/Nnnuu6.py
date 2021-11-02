@@ -1,4 +1,3 @@
-
 @iqthon.iq_cmd(
     pattern="اطفاء مؤقت( [0-9]+)?$",
     command=("اطفاء مؤقت", plugin_category),
