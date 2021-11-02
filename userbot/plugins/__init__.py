@@ -2,10 +2,10 @@ import math
 import os
 import re
 import time
-import pyfiglet
 
 import heroku3
 import lottie
+import pyfiglet
 import requests
 import spamwatch as spam_watch
 from validators.url import url
@@ -19,8 +19,7 @@ from ..core.managers import edit_delete, edit_or_reply
 from ..core.session import jmthon
 from ..helpers import *
 from ..helpers.utils import _cattools, _catutils, _format, install_pip, reply_id
-from ..helpers.utils import _format
-from . import _format, iqthon, deEmojify, edit_delete, edit_or_reply
+from . import _format, deEmojify, edit_delete, edit_or_reply, iqthon
 
 # =================== CONSTANT ===================
 bot = jmthon
