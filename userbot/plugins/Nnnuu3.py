@@ -7,8 +7,6 @@
         "usage": "{tr}اطفاء تليثون",
     },
 )
-
-
 async def _(event):
     "♰︙ إيقاف التشغيـل ✕"
     if BOTLOG:
