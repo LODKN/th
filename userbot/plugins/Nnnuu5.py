@@ -18,4 +18,3 @@ async def _(event):
             mentions += f"[\u2063](tg://user?id={x.id})"
     await event.client.send_message(event.chat_id, mentions, reply_to=reply_to_id)
     await event.delete()
-
