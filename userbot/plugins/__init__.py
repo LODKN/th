@@ -5,7 +5,6 @@ import time
 
 import heroku3
 import lottie
-import pyfiglet
 import requests
 import spamwatch as spam_watch
 from validators.url import url
