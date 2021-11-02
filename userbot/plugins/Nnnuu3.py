@@ -1,4 +1,4 @@
-iqthon.iq_cmd(
+@iqthon.iq_cmd(
     pattern="اطفاء تليثون$",
     command=("اطفاء تليثون", plugin_category),
     info={
