@@ -1,4 +1,4 @@
-""" جميع الحقوق محفوظة لسورس جمثون
+""" جميع الحقوق محفوظة لسورس ريك
 لا تصير حدث وتخمط حقويقي شرفك لتلعب بشرفك """
 
 import os
@@ -35,7 +35,7 @@ def get_download_url(link):
     command=("بينت", plugin_category),
 )
 async def _(event):
-    "لتحميل الصور من برنامج بينترست خاص بجمثون فقط"
+    "لتحميل الصور من برنامج بينترست خاص بريـك فقط"
     R = event.pattern_match.group(1)
     links = re.findall(r"\bhttps?://.*\.\S+", R)
     await event.delete()
