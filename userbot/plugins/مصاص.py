@@ -110,9 +110,7 @@ async def endgmute(event):
             event, "**♰... غيـࢪ قـادࢪ عـلى جـلب مـعلومات الـشخص ..♰**"
         )
     if not is_muted(userid, "gmute"):
-        return await edit_or_reply(
-            event, f"**♰... هـذا الشـخص مفتوح اصلا  ..♰**"
-        )
+        return await edit_or_reply(event, f"**♰... هـذا الشـخص مفتوح اصلا  ..♰**")
     try:
         unmute(userid, "gmute")
     except Exception as e:
