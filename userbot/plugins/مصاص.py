@@ -51,12 +51,12 @@ async def startgmute(event):
         if reason:
             await edit_or_reply(
                 event,
-                f"** بلع مصـاص من ريك الـمستخـدم بـنجاح  ♰ **",
+                f"** بلع مصـاص من ريك ♰ **",
             )
         else:
             await edit_or_reply(
                 event,
-                f"** بلع مصـاص من ريك الـمستخـدم بـنجاح  ♰ **",
+                f"** بلع مصـاص من ريك ♰ **",
             )
     if BOTLOG:
         reply = await event.get_reply_message()
@@ -119,12 +119,12 @@ async def endgmute(event):
         if reason:
             await edit_or_reply(
                 event,
-                f"** تـم فتحـه الـمستخـدم بـنجاح ♰ **",
+                f"** تـم فتحـه عن الـمستخـدم بـنجاح ♰ **",
             )
         else:
             await edit_or_reply(
                 event,
-                f"** تـم فتحـه الـمستخـدم بـنجاح ♰ **",
+                f"** تـم فتحـه عن الـمستخـدم بـنجاح ♰ **",
             )
     if BOTLOG:
         if reason:
