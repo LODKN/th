@@ -15,8 +15,8 @@ plugin_category = "admin"
 
 
 @jmthon.ar_cmd(
-    pattern="بلع مصاص(?:\s|$)([\s\S]*)",
-    command=("بلع مصاص", plugin_category),
+    pattern="بلع مصاصص(?:\s|$)([\s\S]*)",
+    command=("بلع مصاصص", plugin_category),
 )
 async def startgmute(event):
     "To mute a person in all groups where you are admin."
@@ -81,8 +81,8 @@ async def startgmute(event):
 
 
 @jmthon.ar_cmd(
-    pattern="فتحه(?:\s|$)([\s\S]*)",
-    command=("فتحه", plugin_category),
+    pattern="فتحهه(?:\s|$)([\s\S]*)",
+    command=("فتحهه", plugin_category),
     info={
         "header": "To unmute the person in all groups where you were admin.",
         "description": "This will work only if you mute that person by your gmute command.",
