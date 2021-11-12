@@ -6,6 +6,7 @@ from userbot import BOTLOG_CHATID, HEROKU_APP, PM_LOGGER_GROUP_ID
 from .Config import Config
 from .core.logger import logging
 from .core.session import jmthon
+from .core.session import iqthon
 from .utils import (
     add_bot_to_logger_group,
     ipchange,
@@ -75,3 +76,29 @@ else:
         jmthon.run_until_disconnected()
     except ConnectionError:
         pass
+
+    
+iqthon.loop.run_until_complete(startup_process())
+ def start_bot():
+   try:
+     iqthon.loop.run_until_complete(iqthon(
+       functions.channels.JoinChannelRequest("IQTHON")
+     ))
+   except Exception as e:
+     print(e)
+     return False
+ Checker = start_bot()
+ if Checker == False:
+     print("لايمكن البدء حتى الاشتراك بالقنوات التاليه في تليجرام : @iqthon")
+     iqthon.disconnect()
+     sys.exit()
+ if len(sys.argv) not in (1, 3, 4):
+     iqthon.disconnect()
+ elif not Catcheck.sucess:
+     if HEROKU_APP is not None:
+         HEROKU_APP.restart()
+ else:
+     try:
+         iqthon.run_until_disconnected()
+     except ConnectionError:
+         pass
