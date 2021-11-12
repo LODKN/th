@@ -9,4 +9,3 @@ from . import *
 @jmthon.on(admin_cmd("بوتي$", incoming=True))
 async def proz(event):
     await bot.send_message(event.chat_id, str(os.environ.get("TG_BOT_USERNAME")))
-
