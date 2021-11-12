@@ -9,7 +9,7 @@ from userbot import jmthon
 
 from ..Config import Config
 
-ROZ_IC = "https://telegra.ph/file/c4368d0b911ef254e163e.mp4"
+ROZ_IC = "https://telegra.ph/file/6e0d00a513ed72ef7516e.jpg"
 ROE = "**♰ هـذه هي قائمة اوامـر سـورس ريـك ♰**"
 
 if Config.TG_BOT_USERNAME is not None and tgbot is not None:
