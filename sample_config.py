@@ -26,7 +26,6 @@ class Config(object):
         "TG_BOT_TOKEN_BF_HER", None
     )
     TG_BOT_USERNAME = None
-    TG_BOT_REK = "اضغط [هنا](https://t.me/addstickers/Us_by_E6E3BOT)"
     # get this value from http://www.timezoneconverter.com/cgi-bin/findzone.tzc
     TZ = os.environ.get("TZ", "Asia/Kolkata")
     # set this with required cat repo link
