@@ -61,24 +61,6 @@ async def _(event):
 
 
 @jmthon.ar_cmd(
-    pattern="جسمه$",
-    command=("جسمه", plugin_category),
-    info={
-        "الامر": "**امر تسليه قم بالتجربه بنفسك**",
-        "الاستخدام": "{tr}.جسمه",
-    },
-)
-async def _(event):
-    "animation command"
-    event = await edit_or_reply(event, "**ببالي كلمه بس**")
-    deq = deque(list("🗿 فشلة من صادق 🗿"))
-    for _ in range(999):
-        await asyncio.sleep(0.5)
-        await event.edit("".join(deq))
-        deq.rotate(1)
-
-
-@jmthon.ar_cmd(
     pattern="مطر$",
     command=("مطر", plugin_category),
     info={
