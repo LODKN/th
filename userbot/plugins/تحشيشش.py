@@ -204,7 +204,7 @@ async def permalink(mention):
         f"♰︙المستخدم [{tag}](tg://user?id={user.id}) \n♰︙تـم رفعه مطور من باب الشرجي .",
     )
 
-    
+
 @jmthon.ar_cmd(
     pattern="جسمه(?:\s|$)([\s\S]*)",
     command=("جسمه", plugin_category),
