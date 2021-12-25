@@ -221,4 +221,3 @@ async def permalink(mention):
         mention,
         f"**ببالي كلمه بس**\nفشلة من 🗿[{tag}](tg://user?id={user.id})🗿 .",
     )
-
