@@ -1,69 +1,43 @@
-import asyncio
- from collections import deque
- from random import choice
+import requests
+from telebot import types
+import telebot
+from time import sleep
+import random
+token = "1465209146:AAFZShk9wfEZxZof7eED_E9s1L4T8hkW858"
+bot = telebot.TeleBot(token)
+r=requests.session() 
+co = types.InlineKeyboardButton(text ="- غنيلي",callback_data = 'check')
+#----#
 
- from userbot import jmthon
- from telethon.tl.functions.phone import CreateGroupCallRequest as startvc
- from telethon.tl.functions.phone import DiscardGroupCallRequest as stopvc
- from telethon.tl.functions.phone import GetGroupCallRequest as getvc
- from telethon.tl.functions.phone import InviteToGroupCallRequest as invitetovc
- from userbot import jmthon
- from ..core.managers import edit_delete, edit_or_reply
 
- async def get_call(event):
-     mm = await event.client(getchat(event.chat_id))
-     xx = await event.client(getvc(mm.full_chat.call))
-     return xx.call
-
- def user_list(l, n):
-     for i in range(0, len(l), n):
-         yield l[i : i + n]
-
- @jmthon.on(admin_cmd(pattern="دعوه للمكالمه(?: |$)(.*)"))
- async def _(e):
-     ok = await edit_or_reply(e, "`Inviting Members to Voice Chat...`")
-     users = []
-     z = 0
-     async for x in e.client.iter_participants(e.chat_id):
-         if not x.bot:
-             users.append(x.id)
-     hmm = list(user_list(users, 6))
-     for p in hmm:
-         try:
-             await e.client(invitetovc(call=await get_call(e), users=p))
-             z += 6
-         except BaseException:
-             pass
-     await ok.edit(f"`Invited {z} users`")
- @jmthon.on(admin_cmd(pattern="بدء مكالمه(?: |$)(.*)"))
- async def _(e):
-     try:
-         await e.client(startvc(e.chat_id))
-         await edit_or_reply(e, "`جار بدء المكالمة ✅...`")
-     except Exception as ex:
-         await edit_or_reply(e, f"`{str(ex)}`")
-
- # ================العاب جيبثون=========================
-
- R = [
-     "**♰**العـاب الاحترافيه** 🎮𓆪 \n"
-     "  ❶ **⪼**  [حرب الفضاء 🛸](https://t.me/gamee?game=ATARIAsteroids)   \n"
-     "  ❸ **⪼**  [القط المشاكس 🐱](https://t.me/gamee?game=CrazyCat)   \n"
-     "  ❹ **⪼**  [صيد الاسماك 🐟](https://t.me/gamee?game=SpikyFish3)   \n"
-     "  ❺ **⪼**  [سباق الدراجات 🏍](https://t.me/gamee?game=MotoFX2)   \n"
-     "  ❻ **⪼**  [سباق سيارات 🏎](https://t.me/gamee?game=F1Racer)   \n"
-     "  ❽ **⪼**  [كرة القدم ⚽](https://t.me/gamee?game=FootballStar)   \n"
-     "  ❾ **⪼**  [كرة السلة 🏀](https://t.me/gamee?game=BasketBoyRush)   \n"
-     "  ❿ **⪼**  [سلة 2 🎯](https://t.me/gamee?game=DoozieDunks)   \n"
-     "  ⓭ **⪼**  [كونج فو 🎽](https://t.me/gamee?game=KungFuInc)   \n"
-     "  ⓰ **⪼**  [كيب اب 🧿](https://t.me/gamee?game=KeepitUP)   \n"
-     "  ⓱ **⪼**  [جيت واي 🚨](https://t.me/gamee?game=Getaway)   \n"
-     "  ⓲ **⪼**  [الالـوان 🔮](https://t.me/gamee?game=ColorHit)   \n"
-     "  ⓳ **⪼**  [مدفع الكرات🏮](https://t.me/gamee?game=NeonBlaster)   \n"
-     "**-** ﻣطوࢪ اެلسۅࢪس  **⪼ [᥉َ𝖴᥆ᖇᥴᥱ ♰ ](t.me/nnnuu)   \n"
-     "**- قناة اެلسۅࢪس⪼ [ᖇ  Ꮛ  Ꮶ ](t.me/k4kk44)   "
- ]
-
- @jmthon.on(admin_cmd(pattern="بلي$"))
- async def ithker(knopis):
-     await knopis.edit(choice(R))
+@bot.message_handler(commands=['start'])
+def start(message):
+    use = message.from_user.username
+    fr = message.from_user.first_name
+    maac = types.InlineKeyboardMarkup()
+    maac.row_width = 2
+    maac.add(co)
+    bjj = message.chat.id
+    bot.send_message(message.chat.id,text=f"""<strong>
+Hi <code>{fr}</code>, 
+- - - - - - - - - - 
+اهلا بك في بوت غنيلي! 
+اضغط غنيلي ليتم اختيار اغنية عشوائية 
+- - - - - - - - - - 
+By  : @aauua 
+</strong>
+    """,parse_mode='html',reply_to_message_id=message.message_id, reply_markup=maac)
+@bot.callback_query_handler(func=lambda call: True)
+def qwere(call):
+    if call.data == 'check':
+    	combo(call.message)   	
+def combo(message):
+		bot.send_message(message.chat.id,"<strong>يتم العثور الرجاء الانتظار... </strong>",parse_mode="html")
+		rl = random.randint(74,154)
+		url = f"https://t.me/KVUUU/{rl}"
+		bot.send_audio(message.chat.id,url,caption="<strong>الاغنية </strong>",parse_mode="html")
+		
+    
+pass
+#داشوفك تريد تخمط
+bot.polling(True)
