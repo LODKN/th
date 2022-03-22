@@ -4,8 +4,6 @@ import random
 import time
 import re
 import requests
-import user_agent
-from user_agent import generate_user_agent
 
 A = "\033[1;91m"
 B = "\033[1;90m"
