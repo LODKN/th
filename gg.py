@@ -17,6 +17,8 @@ def whispers():
    if int(coin) > 600:
     with open('400-coins.txt','a') as f8:
      f8.write(id+' | '+coin+'\n')
+     tlg = (f'''https://api.telegram.org/bot{token}/sendMessage?chat_id={IDD}&text=- id : {id}\n- Coins : {coin}\n- Developers : @HrHrr .''')
+     i = requests.post(tlg)
   else:
    print(f'{E}[×] {id} ==> {S}ERROR')
 whispers()
